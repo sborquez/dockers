@@ -1,0 +1,10 @@
+FROM  rapidsai/rapidsai:0.19-cuda11.0-runtime-ubuntu20.04-py3.8
+RUN source activate rapids\
+	&& pip install \
+		tensorflow-gpu==2.4.*\
+		tensorflow-datasets\
+		tensorflow-probability\
+		pycm\
+		opencv-contrib-python\
+		wandb\
+		scikit-image
