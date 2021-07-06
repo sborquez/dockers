@@ -1,4 +1,6 @@
 FROM  rapidsai/rapidsai:0.19-cuda11.0-runtime-ubuntu20.04-py3.8
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
 RUN source activate rapids\
 	&& pip install \
 		tensorflow-gpu==2.4.*\
