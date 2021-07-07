@@ -6,6 +6,7 @@ RUN source activate rapids\
 		tensorflow-gpu==2.4.*\
 		tensorflow-datasets\
 		tensorflow-probability\
+		tensorflow-addons\
 		pycm\
 		opencv-contrib-python\
 		wandb\
