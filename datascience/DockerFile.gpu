@@ -13,3 +13,5 @@ RUN source activate rapids\
 		kaggle\
 		cuCIM\
 		scikit-image
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
